@@ -17,6 +17,20 @@ body {
   background-color: #eee2df;
 }
 
+/* CSS สำหรับเมนูและช่องค้นหาในแถวเดียว โดยที่เมนูอยู่ตรงกลาง */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* จัดวางเมนูและช่องค้นหาให้อยู่กลาง */
+}
+
+
+.menu {
+
+}
+
+
+
 header {
   background-color: #c89f9c;
   color: #fff;

@@ -25,14 +25,25 @@
   <body>
     <header>
       <h1>My Minimalist Blog</h1>
-      <nav class="menu">
-        <ul>
-          <li><a href="#">หน้าแรก</a></li>
-          <li><a href="#">บทความ</a></li>
-          <li><a href="#">เกี่ยวกับ</a></li>
-          <li><a href="#">ติดต่อ</a></li>
-        </ul>
-      </nav>
+      <div class="navbar">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">หน้าหลัก</a></li>
+                    <li><a href="#">เกี่ยวกับ</a></li>
+                    <li><a href="#">บทความ</a></li>
+                    <li><a href="#">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-box">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="ค้นหา...">
+                <button type="submit">ค้นหา</button>
+            </form>
+        </div>
+    </div>
+
     </header>
 
     <main>
