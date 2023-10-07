@@ -13,22 +13,27 @@ a {
 
 /* Global Styles */
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Itim', sans-serif;
   background-color: #eee2df;
 }
 
 header {
   background-color: #c89f9c;
   color: #fff;
-  padding: 25px 0;
+  padding: 35px 0;
   text-align: center;
   border-radius: 10px;
 }
 
 header h1 {
-  font-size: 30px;
+  font-size: 35px;
 }
+
+/* เปลี่ยนขนาดแบบอักษรในเมนู */
+.menu {
+    font-size: 20px; /* เปลี่ยนขนาดแบบอักษรเป็น 20px หรือขนาดที่คุณต้องการ */
+}
+
 
 nav ul {
   list-style-type: none;
@@ -70,11 +75,11 @@ article {
 }
 
 article h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 article p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
