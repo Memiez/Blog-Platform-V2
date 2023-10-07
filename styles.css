@@ -88,6 +88,10 @@ article a {
   border-radius: 10px;
 }
 
+article a:hover {
+    background-color: #b67f7b;
+}
+
 footer {
   text-align: center;
   padding: 10px 0;
