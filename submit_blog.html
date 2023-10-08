@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c89f9c;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* เพิ่มสไตล์สำหรับเลือกหมวดหมู่ */
+.category-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    appearance: none; /* เอาคำสั่งนี้เพื่อลบลูกศรดรอปดาวน์ใน Firefox */
+}
+
+/* เพิ่มสไตล์สำหรับเลือกหมวดหมู่เมื่อโฮเวอร์ */
+.category-select:hover {
+    border-color: #b67f7b;
+}
+
+/* เพิ่มสไตล์สำหรับเลือกหมวดหมู่ที่ถูกเลือก */
+.category-select:focus {
+    outline: none;
+    border-color: #c89f9c;
+    box-shadow: 0 0 5px rgba(200, 159, 156, 0.5);
+}
+
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #c89f9c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b67f7b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create a New Blog</h1>
+    </header>
+    <div class="container">
+        <form action="create_blog.php" method="post">
+            <label for="blogTitle">Blog Title:</label>
+            <input type="text" id="blogTitle" name="blogTitle" required>
+
+            <label for="category">หมวดหมู่:</label>
+            <select id="category" name="category" class="category-select">
+                <option value="เทคโนโลยี">เทคโนโลยี</option>
+                <option value="อาหาร">อาหาร</option>
+                <option value="การเดินทาง">การเดินทาง</option>
+                <!-- เพิ่มหมวดหมู่อื่น ๆ ตามที่คุณต้องการ -->
+            </select><br>
+
+
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="4" required></textarea>
+
+            <input type="submit" value="Create Blog">
+        </form>
+    </div>
+</body>
+</html>

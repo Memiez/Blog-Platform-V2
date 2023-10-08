@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
 
+    <form action="process_blog.php" method="post">
+      <!-- ฟอร์มส่งข้อมูลไปยัง process_blog.php โดยใช้ HTTP POST -->
+      <!-- รายการข้อมูลฟอร์ม -->
+    </form>
+
     <style>
       .article-image {
         width: 200px;
@@ -27,23 +32,23 @@
       <h1>My Minimalist Blog</h1>
       <div class="navbar">
         <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="#">หน้าหลัก</a></li>
-                    <li><a href="#">เกี่ยวกับ</a></li>
-                    <li><a href="#">บทความ</a></li>
-                    <li><a href="#">ติดต่อ</a></li>
-                </ul>
-            </nav>
+          <nav>
+            <ul>
+              <li><a href="#">หน้าหลัก</a></li>
+              <li><a href="#">Author Profile</a></li>
+              <li><a href="#">บทความ</a></li>
+              <li><a href="submit_blog.html">เขียนบทความ</a></li>
+              <li><a href="#">Log In/Sign Up</a></li>
+            </ul>
+          </nav>
         </div>
         <div class="search-box">
-            <form action="/search" method="get">
-                <input type="text" name="q" placeholder="ค้นหา...">
-                <button type="submit">ค้นหา</button>
-            </form>
+          <form action="/search" method="get">
+            <input type="text" name="q" placeholder="ค้นหา..." />
+            <button type="submit">ค้นหา</button>
+          </form>
         </div>
-    </div>
-
+      </div>
     </header>
 
     <main>
