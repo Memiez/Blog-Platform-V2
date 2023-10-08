@@ -54,12 +54,6 @@ body {
 }
 
 
-.menu {
-
-}
-
-
-
 header {
   background-color: #c89f9c;
   color: #fff;
@@ -139,6 +133,9 @@ article a {
 article a:hover {
     background-color: #b67f7b;
 }
+
+
+
 
 footer {
   text-align: center;
