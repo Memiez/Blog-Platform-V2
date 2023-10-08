@@ -1,127 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บทความตัวอย่าง</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Blog</title>
     <style>
-        /* Reset CSS */
-        body,
-        h1,
-        h2,
-        p,
-        ul,
-        li,
-        a {
-            margin: 0;
-            padding: 0;
-            border: 0;
-        }
+      /* Reset CSS */
+      body,
+      h1,
+      h2,
+      p,
+      ul,
+      li,
+      a {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
 
-        /* Global Styles */
-        body {
-            font-family: 'Itim', sans-serif;
-            background-color: #eee2df;
-            margin: 20px;
-        }
+      /* Global Styles */
+      body {
+        font-family: "Itim", sans-serif;
+        background-color: #eee2df;
+        margin: 20px;
+      }
 
-        header {
-            background-color: #c89f9c;
-            color: #fff;
-            padding: 35px 0;
-            text-align: center;
-            border-radius: 10px;
-        }
+      header {
+        background-color: #c89f9c;
+        color: #fff;
+        padding: 35px 0;
+        text-align: center;
+        border-radius: 10px;
+      }
 
-        header h1 {
-            font-size: 35px;
-        }
+      header h1 {
+        font-size: 35px;
+      }
 
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
 
-        article {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
+      article {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
 
-        article h2 {
-            font-size: 22px;
-        }
+      article h2 {
+        font-size: 22px;
+      }
 
-        article p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
+      article p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
 
-        /* Comment Section Styles */
-        .comment-section {
-            margin-top: 30px;
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
-        }
+    /* Comment Section Styles */
+.comment-section {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
 
-        .comment {
-            background-color: #f4f4f4;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-        }
+.comment {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
 
-        .comment h3 {
-            font-size: 16px;
-        }
+.comment h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
-        .comment p {
-            font-size: 14px;
-        }
+.comment p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
 
-        .comment-form {
-            margin-top: 20px;
-        }
+.comment-form {
+    margin-top: 30px;
+}
 
-        .comment-form label,
-        .comment-form textarea,
-        .comment-form button {
-            display: block;
-            margin-bottom: 10px;
-        }
+.comment-form label,
+.comment-form textarea,
+.comment-form button {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.comment-form label {
+    font-size: 18px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.comment-form button {
+    background-color: #c89f9c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #b67f7b;
+}
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>บทความตัวอย่าง</h1>
+      <h1>Example Blog</h1>
+      
     </header>
     <main>
-        <article>
-            <h2>หัวข้อบทความ</h2>
-            <p>เนื้อหาบทความ...</p>
-        </article>
-        <div class="comment-section">
-            <h3>ส่วนความคิดเห็น</h3>
-            <div class="comment">
-                <h3>John Doe</h3>
-                <p>ความคิดเห็นที่นี่...</p>
-            </div>
-            <!-- เพิ่ม Comment ที่นี่ -->
-            <form class="comment-form">
-                <label for="name">ชื่อ:</label>
-                <input type="text" id="name" name="name">
-
-                <label for="comment">ความคิดเห็น:</label>
-                <textarea id="comment" name="comment"></textarea>
-
-                <button type="submit">โพสต์ความคิดเห็น</button>
-            </form>
+      <article>
+        <h2>Example Blog</h2>
+        <p>
+          Quis ullamco do fugiat dolore sint eu eiusmod sit incididunt ad id
+          culpa sint pariatur laboris culpa proident eiusmod id laborum
+          voluptate Lorem eiusmod consequat laboris elit et excepteur consequat
+          pariatur nostrud aute officia non labore irure cupidatat adipisicing
+          incididunt tempor cillum ex culpa anim sunt culpa esse cillum labore
+          esse sunt laborum consequat consectetur consequat aliquip cillum
+          voluptate in ex commodo officia deserunt non irure adipisicing culpa
+          aliqua laborum ea aliqua eiusmod tempor sunt et reprehenderit deserunt
+          nulla et irure reprehenderit irure deserunt sunt irure ea aliquip
+          pariatur. Non et fugiat quis commodo minim laborum Lorem et deserunt
+          consequat Lorem incididunt sit tempor commodo ea incididunt cillum eu
+          excepteur elit amet consequat dolor occaecat nisi aliqua occaecat
+          cillum Lorem qui magna in eu labore consequat qui non enim incididunt
+          adipisicing esse esse sit velit cillum sint dolore non id velit nulla
+          duis enim cupidatat occaecat nulla commodo occaecat nisi. Quis
+          incididunt labore incididunt adipisicing pariatur labore aliqua est ad
+          eu culpa aliquip id amet exercitation ipsum nulla in nisi sit dolore.
+          Ad in ea sint eu voluptate voluptate laborum duis eiusmod cillum elit
+          laborum ipsum duis laborum esse excepteur magna aliquip incididunt
+          excepteur aliqua ea esse qui labore id esse aute incididunt
+          exercitation exercitation sunt reprehenderit reprehenderit aliquip
+          nulla qui officia nisi consequat dolore labore ad tempor et aute do
+          occaecat in sint nostrud amet consequat enim esse aliquip enim minim
+          anim irure et proident fugiat dolore reprehenderit cillum esse cillum
+          amet irure est aliquip minim sint deserunt Lorem aliqua mollit amet
+          quis aute id.
+        </p>
+      </article>
+      <div class="comment-section">
+        <h3>Comment</h3>
+        <div class="comment">
+          <h3>John Doe</h3>
+          <p>Your Comment...</p>
         </div>
+        <!-- เพิ่ม Comment ที่นี่ -->
+        <form class="comment-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment"></textarea>
+
+          <button type="submit">Submit Your Comment</button>
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>
