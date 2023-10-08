@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทความตัวอย่าง</title>
+    <style>
+        /* Reset CSS */
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li,
+        a {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Itim', sans-serif;
+            background-color: #eee2df;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #c89f9c;
+            color: #fff;
+            padding: 35px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        article h2 {
+            font-size: 22px;
+        }
+
+        article p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            margin-top: 30px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .comment {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .comment h3 {
+            font-size: 16px;
+        }
+
+        .comment p {
+            font-size: 14px;
+        }
+
+        .comment-form {
+            margin-top: 20px;
+        }
+
+        .comment-form label,
+        .comment-form textarea,
+        .comment-form button {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>บทความตัวอย่าง</h1>
+    </header>
+    <main>
+        <article>
+            <h2>หัวข้อบทความ</h2>
+            <p>เนื้อหาบทความ...</p>
+        </article>
+        <div class="comment-section">
+            <h3>ส่วนความคิดเห็น</h3>
+            <div class="comment">
+                <h3>John Doe</h3>
+                <p>ความคิดเห็นที่นี่...</p>
+            </div>
+            <!-- เพิ่ม Comment ที่นี่ -->
+            <form class="comment-form">
+                <label for="name">ชื่อ:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="comment">ความคิดเห็น:</label>
+                <textarea id="comment" name="comment"></textarea>
+
+                <button type="submit">โพสต์ความคิดเห็น</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
