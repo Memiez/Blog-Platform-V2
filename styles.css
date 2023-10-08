@@ -24,6 +24,35 @@ body {
     justify-content: center; /* จัดวางเมนูและช่องค้นหาให้อยู่กลาง */
 }
 
+/* ปรับแต่งช่องค้นหา */
+.search-box input[type="text"] {
+  font-family: 'Itim', sans-serif;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  width: 150px; /* ปรับขนาดความกว้างของช่องค้นหา */
+  height: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/* ปรับแต่งปุ่มค้นหา */
+.search-box button {
+  font-family: 'Itim', sans-serif;
+  background-color: #e4c8c1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* ปรับสีปุ่มค้นหาเมื่อเม้าส์ hover */
+.search-box button:hover {
+  background-color: #b67f7b;
+}
+
 
 .menu {
 
