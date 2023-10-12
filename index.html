@@ -24,6 +24,17 @@
         align-items: center; /* จัดตำแหน่งแนวตั้งให้กลาง */
         justify-content: center; /* จัดตำแหน่งแนวนอนให้กลาง */
       }
+      main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ที่มีขนาดเท่ากัน */
+        gap: 20px; /* ระยะห่างระหว่างกล่องบทความ */
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
     </style>
   </head>
 

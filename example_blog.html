@@ -4,39 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+    rel="stylesheet"
+  />
     <style>
-      /* Reset CSS */
-      body,
-      h1,
-      h2,
-      p,
-      ul,
-      li,
-      a {
-        margin: 0;
-        padding: 0;
-        border: 0;
-      }
 
       /* Global Styles */
-      body {
-        font-family: "Itim", sans-serif;
-        background-color: #eee2df;
-        margin: 20px;
-      }
-
-      header {
-        background-color: #c89f9c;
-        color: #fff;
-        padding: 35px 0;
-        text-align: center;
-        border-radius: 10px;
-      }
-
-      header h1 {
-        font-size: 35px;
-      }
-
       main {
         max-width: 800px;
         margin: 20px auto;
@@ -132,7 +107,18 @@
   <body>
     <header>
       <h1>Example Blog</h1>
-      
+      <div class="navbar">
+        <div class="menu">
+          <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Author's Profile</a></li>
+                <li><a href="example_blog.html">Blog</a></li>
+                <li><a href="submit_blog.html">Create New</a></li>
+                <li><a href="#">Log In/Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
     <main>
       <article>
@@ -184,5 +170,8 @@
         </form>
       </div>
     </main>
+    <footer>
+      <p>&copy; 2023 My Minimalist Blog</p>
+    </footer>
   </body>
 </html>
