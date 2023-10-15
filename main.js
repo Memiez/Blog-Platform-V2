@@ -1,43 +1,32 @@
 // ฟังก์ชันสำหรับดึงข้อมูลจากไฟล์ JSON
 function fetchBlogs() {
-    fetch('blogs.json')
-      .then(response => {
-        // ตรวจสอบถ้ามีปัญหาในการดึงข้อมูล
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json(); // แปลงข้อมูลที่ได้เป็น JSON
-      })
-      .then(blogs => {
-        // ใช้ข้อมูล blogs ที่ได้เป็น JSON ทำงานที่นี่
-        // เช่น: แสดงบล็อกในเว็บไซต์
-        displayBlogs(blogs);
-      })
-      .catch(error => {
-        // จัดการกับข้อผิดพลาดที่เกิดขึ้น
-        console.error('There was a problem with the fetch operation:', error);
-      });
+    fetch('<https://jsonplaceholder.typicode.com/posts>')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log('Error:', error));
   }
   
   // ฟังก์ชันสำหรับแสดงบล็อกในเว็บไซต์
   function displayBlogs(blogs) {
-    const blogContainer = document.getElementById('blog-list'); // ตัวอย่าง ID ของคอนเทนเนอร์ที่จะแสดงบล็อก
-  
-    blogs.forEach(blog => {
-      // สร้าง HTML สำหรับแต่ละบล็อก
-      const blogItem = `
-        <div class="blog-item">
-          <h2>${blog.title}</h2>
-          <p>${blog.summary}</p>
-          <!-- แสดงข้อมูลอื่น ๆ ตามที่ต้องการ -->
-        </div>
-      `;
-  
-      // แทรก HTML ที่สร้างในคอนเทนเนอร์ของบล็อก
-      blogContainer.innerHTML += blogItem;
-    });
-  }
-  
+    const blogs = [
+        { id: 1, title: 'First Blog' },
+        { id: 2, title: 'Second Blog' }
+      ];
+      
+      const newBlog = { id: 3, title: 'Third Blog' };
+      blogs.push(newBlog);
+
+      const idToDelete = 2;
+      const index = blogs.findIndex(blog => blog.id === idToDelete);
+if (index !== -1) {
+  blogs.splice(index, 1);
+}
+const updatedBlog = { id: 1, title: 'Updated First Blog' };
+const index = blogs.findIndex(blog => blog.id === updatedBlog.id);
+if (index !== -1) {
+  blogs[index] = updatedBlog;
+}
+
   // รันฟังก์ชันเมื่อหน้าเว็บโหลด
   window.onload = fetchBlogs;
   
