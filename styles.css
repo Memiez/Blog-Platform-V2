@@ -92,6 +92,81 @@ nav ul li:hover {
   border-radius: 10px;
 }
 
+/* Container for the popular blogs section */
+#popularBlogsSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Styles for the main blog */
+.main-blog {
+  flex: 2; /* Make it twice as wide as the grid */
+  position: relative; 
+}
+
+.main-blog img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.main-blog h1,
+.main-blog p {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-blog a {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  
+}
+
+/* Styles for the blogs grid */
+.blogs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1; /* Makes it take the remaining space */
+}
+
+.blog-item {
+  position: relative;
+}
+
+.blog-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.blog-item p {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
 
 
 article {

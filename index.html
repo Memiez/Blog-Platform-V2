@@ -19,11 +19,12 @@
         display: flex; /* กำหนดการจัดวางให้เป็น flex container */
         align-items: center; /* จัดตำแหน่งแนวตั้งให้กลาง */
         justify-content: center; /* จัดตำแหน่งแนวนอนให้กลาง */
+        border-radius: 10px;
       }
       main {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ที่มีขนาดเท่ากัน */
-        gap: 20px; /* ระยะห่างระหว่างกล่องบทความ */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; 
         max-width: 800px;
         margin: 20px auto;
         padding: 20px;
@@ -31,6 +32,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
       }
+
 
     </style>
   </head>
@@ -59,74 +61,11 @@
       </div>
     </header>
 
-    <main>
+    <section id="popularBlogsSection">
+      <h1>Popular Blogs</h1>
+  </section>
 
-      <article>
-        <img
-          src="images/icon FanArt.png"
-          alt="คำอธิบายรูปภาพ"
-          class="article-image"
-        />
-        <h2>หัวข้อบทความที่น่าสนใจ</h2>
-        <p>รายละเอียดของบทความที่น่าสนใจ...</p>
-        <a href="#">อ่านเพิ่มเติม</a>
-      </article>
-
-      <article>
-        <img
-          src="images/icon FanArt.png"
-          alt="คำอธิบายรูปภาพ"
-          class="article-image"
-        />
-        <h2>บทความล่าสุด</h2>
-        <p>รายละเอียดของบทความล่าสุด...</p>
-        <a href="#">อ่านเพิ่มเติม</a>
-      </article>
-
-      <article>
-        <img
-          src="images/icon FanArt.png"
-          alt="คำอธิบายรูปภาพ"
-          class="article-image"
-        />
-        <h2>หัวข้อบทความที่น่าสนใจ</h2>
-        <p>รายละเอียดของบทความที่น่าสนใจ...</p>
-        <a href="#">อ่านเพิ่มเติม</a>
-      </article>
-
-      <article>
-        <img
-          src="images/icon FanArt.png"
-          alt="คำอธิบายรูปภาพ"
-          class="article-image"
-        />
-        <h2>บทความล่าสุด</h2>
-        <p>รายละเอียดของบทความล่าสุด...</p>
-        <a href="#">อ่านเพิ่มเติม</a>
-      </article>
-
-      <article>
-        <img
-          src="images/icon FanArt.png"
-          alt="คำอธิบายรูปภาพ"
-          class="article-image"
-        />
-        <h2>หัวข้อบทความที่น่าสนใจ</h2>
-        <p>รายละเอียดของบทความที่น่าสนใจ...</p>
-        <a href="#">อ่านเพิ่มเติม</a>
-      </article>
-
-      <article>
-        <img
-          src="images/icon FanArt.png"
-          alt="คำอธิบายรูปภาพ"
-          class="article-image"
-        />
-        <h2>บทความล่าสุด</h2>
-        <p>รายละเอียดของบทความล่าสุด...</p>
-        <a href="#">อ่านเพิ่มเติม</a>
-      </article>
-    </main>
+<main id="article-list"></main>
 
 <main id="article-list">
 </main>
@@ -137,12 +76,24 @@
 
 
     <footer>
+      <div class="statistics-section">
+        <div class="statistic">
+            <span class="number" id="totalBlogs">-</span>
+            <span class="label">จำนวนบล็อกทั้งหมด</span>
+        </div>
+        <div class="statistic">
+            <span class="number" id="totalViews">-</span>
+            <span class="label">จำนวนผู้เข้าชม</span>
+        </div>
+    </div>
       <p>&copy; 2023 My Minimalist Blog</p>
     </footer>
 
+    <script src="main.js"></script>
+
   </body>
 
-  <script src="main.js"></script>
+
 
 
 
