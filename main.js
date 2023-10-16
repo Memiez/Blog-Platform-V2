@@ -22,6 +22,18 @@ function fetchBlogs() {
     });
 }
 
+// Category
+document.querySelectorAll('.dropdown-content a').forEach(link => {
+  link.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      const selectedCategory = this.getAttribute('data-category');
+      const filteredBlogs = blogs.filter(blog => blog.category === selectedCategory);
+      displayBlogs(filteredBlogs);
+  });
+});
+
+
 function showBlogs() {
   const startIndex = (currentPage - 1) * pageSize;
   const endIndex = currentPage * pageSize;
@@ -105,8 +117,8 @@ document.getElementById('previousPageButton').addEventListener('click', showPrev
 
 // statistics
 const data = {
-  totalBlogs: 123,   // จำนวนบล็อกทั้งหมด
-  totalViews: 4567   // จำนวนผู้เข้าชม
+  totalBlogs: 123,
+  totalViews: 4567
 };
 
 document.getElementById('totalBlogs').textContent = data.totalBlogs;

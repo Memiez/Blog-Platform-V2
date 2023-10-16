@@ -40,18 +40,32 @@
   <body>
     <header>
       <h1>My Minimalist Blog</h1>
+
       <div class="navbar">
+        
         <div class="menu">
           <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="profile.html">Author's Profile</a></li>
+              <div class="dropdown">
+                <button class="dropbtn">Category</button>
+                <div class="dropdown-content">
+                    <a href="#" data-category="food">Food</a>
+                    <a href="#" data-category="travel">Travel</a>
+                    <a href="#" data-category="technology">Technology</a>
+                    <!-- เพิ่มหมวดหมู่อื่น ๆ ตามต้องการ -->
+                </div>
+            </div>
               <li><a href="example_blog.html">Blog</a></li>
               <li><a href="submit_blog.html">Create New</a></li>
               <li><a href="#">Log In/Sign Up</a></li>
+              
             </ul>
           </nav>
         </div>
+
+      
         <div class="search-box">
           <form action="/search" method="get">
             <input type="text" name="q" placeholder="ค้นหา..." />
@@ -67,8 +81,6 @@
 
 <main id="article-list"></main>
 
-<main id="article-list">
-</main>
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <button id="previousPageButton" style="margin-right: 10px;">Previous</button>
   <button id="nextPageButton">Next</button>
@@ -79,11 +91,11 @@
       <div class="statistics-section">
         <div class="statistic">
             <span class="number" id="totalBlogs">-</span>
-            <span class="label">จำนวนบล็อกทั้งหมด</span>
+            <span class="label">Total Blogs</span>
         </div>
         <div class="statistic">
             <span class="number" id="totalViews">-</span>
-            <span class="label">จำนวนผู้เข้าชม</span>
+            <span class="label">Visitors</span>
         </div>
     </div>
       <p>&copy; 2023 My Minimalist Blog</p>
